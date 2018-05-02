@@ -15,4 +15,7 @@ Rotation cases:
 4. Case 4: The imbalance is in the RIGHT subtree of the root's RIGHT child.
 
 Case 1 and Case 4 requires single rotations to balance.
-Case 2 and Case 3 requires double rotations to balance. This is due to their imbalances being in the inside of the tree. 
+Case 2 and Case 3 requires double rotations to balance. This is due to their imbalances being in the inside of the tree.
+
+NOTE to me from StackOverflow:
+When it comes to classes, the header file contains class definition, which is all the data and method declarations. The .cpp files contains the implementations of the methods. 
