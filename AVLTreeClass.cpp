@@ -35,6 +35,9 @@ AVLNode AVLTreeClass::caseOneRotation(AVLNode* k2)
 	k1.right = k2;
 	k2->height = std::max(height(k2->left), height(k2->right)) + 1;
 	k1.height = std::max(height(k1.left), k2->height) + 1;
+
+	// zero pointer
+	k2 = 0;
 	return k1;
 }
 
@@ -42,6 +45,8 @@ AVLNode AVLTreeClass::caseOneRotation(AVLNode* k2)
 AVLNode AVLTreeClass::caseTwoRotation(AVLNode* k3)
 {
 	// TODO
+	
+
 	
 	return *k3;
 }
@@ -62,6 +67,9 @@ AVLNode AVLTreeClass::caseFourRotation(AVLNode* k2)
 	k1.left = k2;
 	k2->height = std::max(height(k2->left), height(k2->right)) + 1;
 	k1.height = std::max(height(k1.right), k2->height) + 1;
+
+	// zero pointer
+	k2 = 0;
 	return k1;
 }
 
