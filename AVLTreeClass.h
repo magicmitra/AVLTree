@@ -24,6 +24,7 @@ protected:
 	// protected attributes
 	int theSize;
 	int modCount;
+	int height(AVLNode* node);
 private:
 	// private attributes
 	AVLNode root;
