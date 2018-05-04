@@ -28,9 +28,9 @@ protected:
 private:
 	// private attributes
 	AVLNode root;
-	AVLNode caseOneRotation(AVLNode* k2);
-	AVLNode caseTwoRotation(AVLNode* k3);
-	AVLNode caseThreeRotation(AVLNode* k3);
-	AVLNode caseFourRotation(AVLNode* k2);
+	AVLNode* caseOneRotation(AVLNode* k2);
+	AVLNode* caseTwoRotation(AVLNode* k3);
+	AVLNode* caseThreeRotation(AVLNode* k3);
+	AVLNode* caseFourRotation(AVLNode* k2);
 };
 
