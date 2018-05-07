@@ -80,10 +80,8 @@ int AVLTreeClass::height(AVLNode* node)
 // return item in root node
 int AVLTreeClass::getRootItem()
 {
-	// size is current determinator for empty tree
-	// might need to check if tree is empty instead
-	// by checking for nodes
-	if (this->theSize == 0)
+	// this checks for nullptr
+	if (this == nullptr)
 	{
 		throw _EXCEPTION_;
 	}
