@@ -77,3 +77,29 @@ int AVLTreeClass::height(AVLNode* node)
 	return node == 0 ? -1 : node->height;
 }
 
+// return item in root node
+int AVLTreeClass::getRootItem()
+{
+	// size is current determinator for empty tree
+	// might need to check if tree is empty instead
+	// by checking for nodes
+	if (this->theSize == 0)
+	{
+		throw _EXCEPTION_;
+	}
+	return root.theItem;
+}
+
+// return minimum item in tree
+int AVLTreeClass::getMinItem()
+{
+	// TODO
+	return 0;
+}
+
+AVLNode AVLTreeClass::getMinNode(AVLNode node)
+{
+	// TODO
+	return node;
+}
+

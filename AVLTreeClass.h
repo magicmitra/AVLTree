@@ -20,11 +20,13 @@ public:
 	AVLTreeClass(int rootNode);
 	~AVLTreeClass();
 	int getRootItem();
+	int getMinItem();
 protected:
 	// protected attributes
 	int theSize;
 	int modCount;
 	int height(AVLNode* node);
+	AVLNode getMinNode(AVLNode node);
 private:
 	// private attributes
 	AVLNode root;
